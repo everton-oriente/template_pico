@@ -1,0 +1,12 @@
+[template]
+cargo_generate_version = ">=0.9.0"
+description = "Development of a products to Smart Vivarium"
+
+[hooks]
+pre = ["cargo-generate/prehook.rhai"]
+
+[placeholders.hal]
+type = "string"
+prompt = "Which HAL?"
+choices = ["rp-hal", "embassy"]
+default = "rp-hal"
